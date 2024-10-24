@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Rock | Paper | Scissor</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/remixicon@4.3.0/fonts/remixicon.css"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div id="main">
+      <div id="header">
+        <div id="left">
+          <h3>ROCK</h3>
+          <h3>PAPER</h3>
+          <h3>SCISSORS</h3>
+        </div>
+        <div id="right">
+          <div class="computer-score">
+            <h5>
+              COMPUTER <br />
+              SCORE
+            </h5>
+            <h1 id="c-score"></h1>
+          </div>
+          <div class="player-score">
+            <h5>
+              YOUR <br />
+              SCORE
+            </h5>
+            <h1 id="p-score"></h1>
+          </div>
+        </div>
+      </div>
+
+      <div id="center">
+          <div class="item outer-left-circle">
+            <div class="outer-left-inner-circle">
+              <div id="img">
+                <img id="stone-img" src="./images/stone.png" alt="" />
+              </div>
+            </div>
+          </div>
+          <div class="item outer-right-circle">
+            <div class="outer-right-inner-circle">
+              <div id="img">
+                <img id="scissor-img" src="./images/scissor.png" alt="" />
+              </div>
+            </div>
+          </div>
+          <div class="item bottom-center-circle">
+            <div class="bottom-center-inner-circle">
+              <div id="img">
+                <img id="paper-img" src="./images/paper.png" alt="" />
+              </div>
+            </div>
+          </div>
+        <div class="left-border"></div>
+        <div class="right-border"></div>
+      </div>
+
+      <div id="tie-div">
+        <div id="holder">
+          <div id="player-pickup">
+            <p>YOU PICKED</p>
+            <div id="res-img">
+              
+            </div>
+          </div>
+          <div id="result-dec">
+            <h1>TIE UP !</h1>
+            <a id="ply-agn" href="./index.html">REPLAY</a>
+          </div>
+          <div id="pc-pickup">
+            <p>PC PICKED</p>
+            <div id="res-img"></div>
+          </div>
+        </div>
+      </div>
+
+      <div id="player-win-div">
+        <div id="holder">
+          <div id="player-pickup">
+            <p>YOU PICKED</p>
+            <div id="user-res-img">
+              
+            </div>
+          </div>
+          <div id="result-dec">
+            <h1>
+              YOU WIN <br />
+              <span> AGAINST PC </span>
+            </h1>
+            <a id="ply-agn" href="./index.html">REPLAY</a>
+          </div>
+          <div id="pc-pickup">
+            <p>PC PICKED</p>
+            <div id="pc-res-img">
+              
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div id="pc-win-div">
+        <div id="holder">
+          <div id="player-pickup">
+            <p>YOU PICKED</p>
+            <div id="uuser-res-img">
+              
+            </div>
+          </div>
+          <div id="result-dec">
+            <h1>
+              YOU LOST
+              <span> AGAINST PC </span>
+            </h1>
+            <a id="ply-agn" href="./index.html">REPLAY</a>
+          </div>
+          <div id="pc-pickup">
+            <p>PC PICKED</p>
+            <div id="pcc-res-img">
+              
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div id="rules">
+        <div class="close-rule">
+          <i class="ri-close-large-fill"></i>
+        </div>
+        <h3>Game Rules</h3>
+        <div id="content">
+          <ul>
+            <li type="square">
+              <p>
+                Rock beats scissors, scissors beat <br />
+                paper, and paper beats rock.
+              </p>
+            </li>
+            <li type="square">
+              <p>
+                Agree ahead of time whether you’ll <br />
+                count off “rock, paper, scissors, <br />
+                shoot” or just “rock, paper, scissors.”
+              </p>
+            </li>
+            <li type="square">
+              <p>
+                Use rock, paper, scissors to settle <br />
+                minor decisions or simply play to <br />
+                pass the time.
+              </p>
+            </li>
+            <li type="square">
+              <p>
+                If both players lay down the same <br />
+                hand, each player lays down another <br />
+                hand.
+              </p>
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <footer>
+        <div id="btn">
+          <a class="rule-btn">Rules</a>
+          <a href="./winner.html" class="next-btn">Next</a>
+        </div>
+      </footer>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>

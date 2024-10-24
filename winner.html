@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>You Win!</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/remixicon@4.3.0/fonts/remixicon.css"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div id="main">
+      
+      <div id="win-center">
+        <div id="star-image-div">
+          <img id="star" src="./images/stars.png" alt="" />
+          <img id="cup-img" src="./images/Vector.png" alt="" />
+        </div>
+        <div id="headings">
+          <h1>HURRAY !!</h1>
+          <h2>YOU WON THE GAME</h2>
+        </div>
+        <a id="ply-agn" href="./index.html">PLAY AGAIN</a>
+      </div>
+
+      <div id="rules">
+        <div class="close-rule">
+          <i class="ri-close-large-fill"></i>
+        </div>
+        <h3>Game Rules</h3>
+        <div id="content">
+          <ul>
+            <li>
+              <p>
+                Rock beats scissors, scissors beat <br />
+                paper, and paper beats rock.
+              </p>
+            </li>
+            <li>
+              <p>
+                Agree ahead of time whether you’ll <br />
+                count off “rock, paper, scissors, <br />
+                shoot” or just “rock, paper, scissors.”
+              </p>
+            </li>
+            <li>
+              <p>
+                Use rock, paper, scissors to settle <br />
+                minor decisions or simply play to <br />
+                pass the time.
+              </p>
+            </li>
+            <li>
+              <p>
+                If both players lay down the same <br />
+                hand, each player lays down another <br />
+                hand.
+              </p>
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <footer>
+        <div id="btn">
+          <a class="rules-btn">Rules</a>
+        </div>
+      </footer>
+    </div>
+
+    <script>
+      (function showRulesSec() {
+        const btn = document.querySelector(".rules-btn");
+        const cross_icon = document.querySelector(".close-rule");
+        const rules_div = document.querySelector("#rules");
+
+        btn.addEventListener("click", function () {
+          rules_div.style.display = "inline-block";
+          btn.style.backgroundColor = "red";
+        });
+
+        cross_icon.addEventListener("click", function () {
+          rules_div.style.display = "none";
+          btn.style.backgroundColor = "none";
+        });
+      })();
+    </script>
+  </body>
+</html>
